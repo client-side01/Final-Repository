@@ -11,17 +11,16 @@ const ContactUsBody = () => {
             </h2>
           </div>
           <p className=" mt-4 text-gray-600">
-            As a Leading Manpower Consultancy in India, AND Services is
-            dedicated to connecting you with top-tier talent. Whether you’re
-            looking for a Top Recruitment Agency or Top Head-hunters, we are
-            here to serve your hiring needs.
+          As a premier staffing firm in India, Talent Track Services is committed to 
+          linking you with exceptional professionals. Whether you’re seeking a leading 
+          hiring agency or elite executive search specialists, we are prepared to meet 
+          your recruitment requirements.
           </p>
 
           <p className=" mt-4 text-gray-600">
-            As a Leading Manpower Consultancy in India, AND Services is
-            dedicated to connecting you with top-tier talent. Whether you’re
-            looking for a Top Recruitment Agency or Top Head-hunters, we are
-            here to serve your hiring needs.
+          Don’t hesitate to contact us. We’re dedicated to providing outstanding support as your 
+          leading recruitment partner. Allow us to assist you in sourcing top-tier professionals 
+          to propel your organization’s success.
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center md:gap-35 gap-6 mb-12 mt-12">
             <div className="text-center">

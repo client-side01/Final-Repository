@@ -4,14 +4,14 @@ const SubmitResume = () => {
   return (
     <div
       className="min-h-screen mb-4  flex items-center w-full overflow-hidden bg-cover "
-      style={{ backgroundImage: "url('/company_banner.png')" }}
+      style={{ backgroundImage: "url('/banner02.png')" }}
       id="Header"
     >
-      <div className="container text-left mx-auto py-4 px-6 md:px-20 lg:px-32  ">
-        <h2 className="text-2xl sm:text-6xl md:text-[82px] inline-block max-w-3xl font-semibold pt-20 ">
+      <div className="container text-left mx-auto py-4 px-6 md:px-20 lg:px-32">
+        <h2 className="text-2xl sm:text-6xl md:text-[82px] inline-block max-w-3xl font-semibold pt-20 text-white">
           Submit Resume
         </h2>
-        <p className="max-w-2xl mt-4 font-semibold">
+        <p className="max-w-2xl mt-4 font-semibold text-white">
         Send in your CV to link with leading companies and explore thrilling career prospects customized for you.
         </p>
         <div className="space-x-6 mt-16">

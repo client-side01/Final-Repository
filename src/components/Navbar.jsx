@@ -1,7 +1,18 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { assets } from "../assets/assets";
 import { useState, useEffect } from "react";
+
+// Navbar Icons
+import { IoHomeOutline } from "react-icons/io5";
+import { RiBuilding2Line } from "react-icons/ri";
+import { PiMicrosoftTeamsLogo } from "react-icons/pi";
+import { GrServices } from "react-icons/gr";
+import { GrBusinessService } from "react-icons/gr";
+import { GrResume } from "react-icons/gr";
+import { MdBusinessCenter } from "react-icons/md";
+import { BiSolidContact } from "react-icons/bi";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -46,36 +57,46 @@ const Navbar = () => {
           {/* Home */}
           <li className="relative group">
             <Link to="/" className="cursor-pointer hover:text-black">
+              <IoHomeOutline className="inline-block mr-1 -mt-1" />
               Home
             </Link>
           </li>
 
           {/* About */}
           <li className="relative group">
-            <Link to="CompanyOverview" className="cursor-pointer hover:text-black">
-              About Us +
+            <Link
+              to="CompanyOverview"
+              className="cursor-pointer hover:text-black"
+            >
+              About Us
+              <IoMdArrowDropdown className="inline-block ml-1 group-hover:rotate-180 duration-200 text-2xl" />
             </Link>
             <div className="absolute top-4.5 left-0 mt-2 hidden group-hover:block bg-white text-black shadow-md rounded p-2 z-50">
               <Link
                 to="/CompanyOverview"
                 className="block px-4 py-2 hover:bg-gray-100 hover:text-green-400"
-                
               >
                 Company Overview
+                < RiBuilding2Line className="inline-block ml-1 -mt-1 text-2xl"/>
               </Link>
               <Link
                 to="/LeadershipTeam"
                 className="block px-4 py-2 hover:bg-gray-100 hover:text-green-400"
               >
-                Leadership Team
+                Leadership Team 
+                < PiMicrosoftTeamsLogo className="inline-block ml-1 -mt-1 text-2xl"/>
               </Link>
             </div>
           </li>
 
           {/* Employer */}
           <li className="relative group">
-            <Link to="/SubmitRequirement" className="cursor-pointer hover:hover:text-black">
-              Employer +
+            <Link
+              to="/SubmitRequirement"
+              className="cursor-pointer hover:hover:text-black"
+            >
+              Employer 
+              <IoMdArrowDropdown className="inline-block ml-1 group-hover:rotate-180 duration-200 text-2xl" />
             </Link>
             <div className="absolute top-4.5 left-0 mt-2 hidden group-hover:block bg-white text-black shadow-md rounded p-2 z-50">
               <Link
@@ -83,12 +104,14 @@ const Navbar = () => {
                 className="block px-4 py-2 hover:bg-gray-100  hover:text-green-400"
               >
                 Submit Requirement
+                <GrServices className="inline-block ml-1 -mt-1 text-2xl"/>
               </Link>
               <Link
                 to="/ServiceOffer"
                 className="block px-4 py-2 hover:bg-gray-100  hover:text-green-400"
               >
                 Services We Offer
+                <GrBusinessService className="inline-block ml-1 -mt-1 text-2xl" />
               </Link>
             </div>
           </li>
@@ -99,7 +122,8 @@ const Navbar = () => {
               to="/SubmitResume"
               className="cursor-pointer hover:hover:text-black"
             >
-              Job Opportunities +
+              Job Opportunities 
+              <IoMdArrowDropdown className="inline-block ml-1 group-hover:rotate-180 duration-200 text-2xl" />
             </Link>
             <div className="absolute top-4.5 left-0 mt-2 hidden group-hover:block bg-white text-black shadow-md rounded p-2 z-50">
               <Link
@@ -107,25 +131,27 @@ const Navbar = () => {
                 className="block px-4 py-2 hover:bg-gray-100  hover:text-green-400"
               >
                 Submit Your CV
+                <GrResume className="inline-block ml-1 -mt-1 text-2xl"/>
               </Link>
               <Link
                 to="/Opportunities"
                 className="block px-4 py-2 hover:bg-gray-100  hover:text-green-400"
               >
                 Job Opportunities
+                <MdBusinessCenter className="inline-block ml-1 -mt-1 text-2xl"/>
               </Link>
             </div>
           </li>
 
           {/* Blog */}
           {/* <li className="relative group"> */}
-            {/* <Link
+          {/* <Link
               to="Posts"
               className="cursor-pointer hover:text-gray-400"
             >
               Blog
             </Link> */}
-            {/* <div className="absolute top-4.5 left-0 mt-2 hidden group-hover:block bg-white text-black shadow-md rounded p-2 z-50">
+          {/* <div className="absolute top-4.5 left-0 mt-2 hidden group-hover:block bg-white text-black shadow-md rounded p-2 z-50">
               <Link
                 to="/LatestPosts"
                 className="block px-4 py-2 hover:bg-gray-100   hover:text-green-400"
@@ -141,8 +167,12 @@ const Navbar = () => {
             </div> */}
           {/* </li> */}
           <li>
-            <Link to="/Contact" className="cursor-pointer  hover:hover:text-black">
+            <Link
+              to="/Contact"
+              className="cursor-pointer  hover:hover:text-black"
+            >
               Contact Us
+              <BiSolidContact className="inline-block ml-1 -mt-1 text-xl"/>
             </Link>
           </li>
           <li>
@@ -156,7 +186,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-             to="/SubmitRequirement"
+              to="/SubmitRequirement"
               className="cursor-pointer h-[40px]  px-4 bg-transparent hover:bg-gray-500 
               hover:text-white rounded transition-all duration-300 flex items-center border border-white-500"
             >

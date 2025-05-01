@@ -4,7 +4,7 @@ const JobOpportunities01 = () => {
   return (
     <div
       className="min-h-screen mb-4  flex items-center w-full overflow-hidden bg-cover "
-      style={{ backgroundImage: "url('/company_banner.png')" }}
+      style={{ backgroundImage: "url('/banner02.png')" }}
       id="Header"
     >
       <div className="container text-left mx-auto py-4 px-6 md:px-20 lg:px-32  ">
