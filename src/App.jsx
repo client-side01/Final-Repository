@@ -21,6 +21,7 @@ import Services from "./components/Services";
 import WelcomePage from "./components/WelcomePage";
 import CompanyBody from "./routes/CompanyBody";
 import LeaderShipBody from "./routes/LeadershipBody";
+import Testimonials from "./components/Testimonials";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
               <StatsSection />
               <WelcomePage />
               <Services />
+              <Testimonials />
               <JobOpportunities />
 
               <Footer />
